@@ -5,7 +5,7 @@ function About() {
     <div className="container m-auto min-h-screen my-15">
       <div className="grid md:grid-cols-2  gap-5">
         <div className="">
-          <p className="text-[65px] font-bold text-center">
+          <p className="text-[65px] font-bold text-center text-[#d07635]">
             About <br />
             Hagoga
           </p>

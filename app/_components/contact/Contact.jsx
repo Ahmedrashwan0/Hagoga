@@ -5,7 +5,7 @@ import { MdOutlineMail } from "react-icons/md";
 
 function Contact() {
   return (
-    <section className="send-us min-h-screen bg-white m-10  px-4 py-8 shadow-2xl">
+    <section className="send-us min-h-screen bg-white m-10  px-4 py-8 shadow-2xl text-[#d07635]">
       <div className="container text-2xl mb-6 text-center">
         <h2 className=" font-bold py-2">Send Us</h2>
         <p>
@@ -118,9 +118,9 @@ function Contact() {
               </span>
               <h3 className="text-lg font-semibold"> Email</h3>
             </div>
-            <p className="mt-2 text-gray-600 ml-5">
-              admin@Hagoga.com <br />
-              support@Hagoga.com
+            <p className="m-1 text-gray-600 ">
+              admin@Hagoga .com <br />
+              support@Hagoga .com
             </p>
           </div>
         </div>

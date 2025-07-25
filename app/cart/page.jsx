@@ -32,7 +32,7 @@ export default function CartPage() {
           <>
             <div className="container m-auto grid gap-4 xl:grid-cols-4 lg:grid-cols-3  mt-15 md:grid-cols-2 sm:grid-cols-1">
               {cart.map((item, index) => (
-                <div className="card bg-base-100 shadow-md" key={index}>
+                <div className="card  bg-[#1d232a] shadow-md text-[#d07635]" key={index}>
                   <figure className="px-4 pt-4">
                     <img
                       src={item.image}

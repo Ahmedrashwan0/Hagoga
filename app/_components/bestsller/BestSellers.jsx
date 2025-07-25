@@ -26,17 +26,17 @@ import "./BestSellers.css"
   };
   return (
     <div className=" container m-auto  my-10">
-        <p className="text-[35px] font-bold text-center">Best-selling <br />Foods</p>
+        <p className="text-[35px] font-bold text-center text-[#d07635]">Best-selling <br />Foods</p>
            <Carousel autoPlay responsive={responsive} infinite={true} >
                         {products.map((items) => (
-                          <div className="card bg-base-100 w-70 shadow-sm" key={items.id}>
+                          <div className="card  bg-[#1d232a] w-70 shadow-sm m-auto text-[#d07635]" key={items.id}>
                             <figure className="px-10 pt-10">
                               <img src={items.image} alt="Shoes" className=" rounded-xl" />
                             </figure>
                             <div className="card-body items-center text-center">
                               <h2 className="card-title">{items.title}</h2>
                               <p>{items.price}$</p>
-                              <div className="card-actions ">
+                              <div>
                                 <BtnAdd item={items} />
                               </div>
                             </div>

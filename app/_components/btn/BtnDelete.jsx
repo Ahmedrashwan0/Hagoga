@@ -9,7 +9,7 @@ function BtnDelete({ item, onDelete }) {
   };
 
   return (
-    <button className="btn bg-[#ff0000] hover:bg-red-800 text-white rounded-xl" onClick={handleDelete}>
+    <button className="btn bg-[#ff0000] hover:bg-red-800 text-white rounded-xl border-none" onClick={handleDelete}>
        Delete
     </button>
   );

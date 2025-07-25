@@ -8,13 +8,13 @@ export default function Home() {
   return (
     <>
       <Hero/>
-      <img src="/Group.png" alt="df" className="w-fu" />
+      <img src="/Group.png" alt="df" className="h-3 w-full object-cover" />
       <BestSellers/>
-      <img src="/Group.png" alt="df" className="w-fu" />
+      <img src="/Group.png" alt="df" className="w-full h-3 object-cover" />
       <About/>
-      <img src="/Group.png" alt="df" className="w-fu" />
+      <img src="/Group.png" alt="df" className="w-full h-3 object-cover" />
       <Contact/>
-      <img src="/Group.png" alt="df" className="w-fu" />
+      <img src="/Group.png" alt="df" className="w-full h-3 object-cover" />
     </>
   );
 }

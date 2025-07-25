@@ -18,7 +18,7 @@ function BtnAdd({ item }) {
   return (
     <>
     
-    <button className="btn bg-[#d07635] hover:bg-orange-500 text-white rounded-xl" onClick={() => addToCart(item)}>
+    <button className="btn bg-[#d07635] hover:bg-orange-500 text-white rounded-xl border-none" onClick={() => addToCart(item)}>
       Add to Cart
     </button>
     
