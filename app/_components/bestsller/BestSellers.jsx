@@ -14,7 +14,6 @@ import "./BestSellers.css"
       const data = await res.json();
       setProducts(data.products);
     }
-
     fetchData();
   }, []);
 

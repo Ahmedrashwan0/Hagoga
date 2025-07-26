@@ -8,6 +8,23 @@ async function menu() {
   const data = await response.json();
   const product = data.products;
 
+
+  
+  const responsesweet = await fetch(
+    "https://ahmedrashwan0.github.io/API_Restaurant/product.json"
+  );
+  const datasweet = await responsesweet.json();
+  const sweet = datasweet.sweet;
+ 
+
+  const responsedrinks = await fetch(
+    "https://ahmedrashwan0.github.io/API_Restaurant/product.json"
+  );
+  const datadrinks = await responsedrinks.json();
+  const drinks = datadrinks.drinks;
+
+
+
   return (
     <>
      
@@ -43,11 +60,11 @@ async function menu() {
           type="radio"
           name="my_tabs"
           className="tab bg-[#d07635] m-1"
-          aria-label="All casseroles"
+          aria-label="Sweet"
         />
         <div className="tab-content border-base-300  p-10">
           <div className=" container m-auto grid gap-4 xl:grid-cols-4 lg:grid-cols-3  mt-15 md:grid-cols-2 sm:grid-cols-1 ">
-            {product.map((items) => (
+            {sweet.map((items) => (
               <div className="card bg-[#1d232a] w-70 shadow-sm text-[#d07635]" key={items.id}>
                 <figure className="px-10 pt-10">
                   <img src={items.image} alt="Shoes" className=" rounded-xl" />
@@ -68,11 +85,11 @@ async function menu() {
           type="radio"
           name="my_tabs"
           className="tab bg-[#d07635] m-1"
-          aria-label="Grilled food"
+          aria-label="Drinks"
         />
         <div className="tab-content border-base-300 p-10">
           <div className=" container m-auto grid gap-4 xl:grid-cols-4 lg:grid-cols-3  mt-15 md:grid-cols-2 sm:grid-cols-1 ">
-            {product.map((items) => (
+            {drinks.map((items) => (
               <div className="card bg-[#1d232a] w-70 shadow-sm text-[#d07635]" key={items.id}>
                 <figure className="px-10 pt-10">
                   <img src={items.image} alt="Shoes" className=" rounded-xl" />
